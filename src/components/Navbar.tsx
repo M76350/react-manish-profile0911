@@ -53,8 +53,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">MK</span>
+            <div className="w-10 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">
+                <img src="public/favlogo.png" alt="" />
+              </span>
             </div>
             <span className="font-bold text-xl">Manish Kumar</span>
           </Link>
