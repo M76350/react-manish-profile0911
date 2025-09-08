@@ -3,61 +3,61 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
-    {
-      id: 1,
-      title: "Senior Full-Stack Developer",
-      company: "TechCorp Solutions",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      description: [
-        "Led development of scalable web applications serving 100k+ users",
-        "Architected microservices infrastructure reducing deployment time by 60%",
-        "Mentored junior developers and conducted code reviews",
-        "Implemented CI/CD pipelines improving development workflow"
-      ],
-      technologies: ["React", "Node.js", "AWS", "Docker", "PostgreSQL"]
-    },
+    // {
+    //   id: 1,
+    //   title: "Senior Full-Stack Developer",
+    //   company: "TechCorp Solutions",
+    //   location: "San Francisco, CA",
+    //   duration: "2022 - Present",
+    //   description: [
+    //     "Led development of scalable web applications serving 100k+ users",
+    //     "Architected microservices infrastructure reducing deployment time by 60%",
+    //     "Mentored junior developers and conducted code reviews",
+    //     "Implemented CI/CD pipelines improving development workflow"
+    //   ],
+    //   technologies: ["React", "Node.js", "AWS", "Docker", "PostgreSQL"]
+    // },
     {
       id: 2,
       title: "Full-Stack Developer",
       company: "Digital Innovations Inc",
-      location: "New York, NY",
-      duration: "2020 - 2022",
+      location: "Remote",
+      duration: "Aug 2025 - Present",
       description: [
         "Developed and maintained 15+ client websites and web applications",
         "Collaborated with design team to implement pixel-perfect UIs",
         "Optimized application performance resulting in 40% faster load times",
         "Integrated third-party APIs and payment processing systems"
       ],
-      technologies: ["React", "Express.js", "MongoDB", "Stripe", "Figma"]
+      technologies: ["React", "Express.js", "MongoDB", "Stripe", "Figma","Socket.Io","Streaming","ReduxToolKit","Node js","React Native","flutter","dart","Getx","Riverpord"]
     },
     {
       id: 3,
-      title: "Frontend Developer",
-      company: "StartupHub",
-      location: "Austin, TX",
-      duration: "2019 - 2020",
+      title: " Associate Frontend Developer",
+      company: "Telepathy Infotech pvt Ltd",
+      location: "Jaipur",
+      duration: "jan 2025 - Aug 2025",
       description: [
         "Built responsive web interfaces for early-stage startups",
         "Implemented modern JavaScript frameworks and libraries",
         "Worked closely with UX designers to enhance user experience",
         "Participated in agile development cycles and sprint planning"
       ],
-      technologies: ["React", "Vue.js", "SASS", "Webpack", "Jest"]
+      technologies: ["React", "Next js","redux","Shad CN","Api Integratation","git & github","Vue.js", "SASS", "Webpack", "Gsap","Tailwind Css",]
     },
     {
       id: 4,
-      title: "Junior Web Developer",
-      company: "WebCraft Agency",
+      title: "Junior Web Developer Intern",
+      company: "TelepathyInfotech pvt Ltd",
       location: "Remote",
-      duration: "2018 - 2019",
+      duration: "june 2024 - Dec 2024",
       description: [
         "Developed custom WordPress themes and plugins",
         "Created responsive websites using HTML, CSS, and JavaScript",
         "Assisted in SEO optimization and performance improvements",
         "Provided technical support and maintenance for client websites"
       ],
-      technologies: ["WordPress", "PHP", "jQuery", "Bootstrap", "MySQL"]
+      technologies: [ "HTML", "CSS", "Bootstrap", "JavaScript","Wordpress"]
     }
   ];
 

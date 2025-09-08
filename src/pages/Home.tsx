@@ -2,6 +2,10 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Code, Palette, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import Projects from './Projects';
+import Contact from './Contact';
+import Experience from './Experience';
+import About from './About';
 
 const Home = () => {
   const handleDownloadResume = () => {
@@ -138,6 +142,10 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Projects />
+      <Experience />
+      <About />
+      <Contact />
     </div>
   );
 };
