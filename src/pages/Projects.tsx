@@ -6,39 +6,40 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#"
+      title: "Real State platfrom",
+      description: "Built a full-stack Real Estate Lead Management app with MERN (MongoDB, Express.js, React, Node.js), featuring secure authentication, real-time chat, and an admin dashboard for efficient property and lead control..",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHIY_ZFG0CCi4fio5DyV65_P2D7RhO7vfiTg&s",
+      technologies: ["React", "Next js", "Tailwind css", "Shadcn", "Node.js", "MongoDB",],
+      liveUrl: "https://homelead.in/",
+      githubUrl: "https://github.com/M76350"
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
+      title: "Pizza Bookung & Slot",
+      description: "Created a visually engaging Mehandipur Balaji Temple webpage using HTML, CSS, Bootstrap, and WOW.js animations. Features responsive design, immersive storytelling, and dynamic effects that celebrate the temple’s spiritual ambiance.",
+      image: "	https://m76350.github.io/pizza-heart-web/images/f2.png",
       technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://m76350.github.io/pizza-heart-web/",
+      githubUrl: "https://github.com/M76350/pizza-heart-web"
+
     },
     {
       id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard with location-based forecasts, interactive charts, and weather alerts using external APIs.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "D3.js", "Weather API", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#"
+      title: "Delhuan dairy & Animal care",
+      description: "Developed a responsive Delhuan Dairy website using HTML, CSS, and Bootstrap, enhanced with WOW.js animations. The site offers smooth navigation, vibrant dairy visuals, and engaging animation effects that enhance user interaction",
+      image: "https://delhuan-dairy.netlify.app/assets/hero-dairy-3-DXCLnQ35.jpg",
+      technologies: ["Flutter","dart","material","getx", "riverpord"],
+      liveUrl: "https://delhuan-dairy.netlify.app/",
+      githubUrl: "https://github.com/M76350/delhuan-dairy"
     },
     {
       id: 4,
-      title: "Social Media Platform",
-      description: "A modern social media platform with real-time messaging, post sharing, and advanced privacy controls.",
-      image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=500&h=300&fit=crop",
-      technologies: ["React", "Firebase", "Material-UI", "Cloud Functions"],
+      title: "Delhuan dairy App",
+      description: "Built the Delhuan Dairy app with Flutter (Dart), featuring a responsive UI, seamless dairy product browsing, intuitive ordering, and engaging animations—offering users a smooth and modern mobile experience.",
+      image: "https://i.ytimg.com/vi/KVqtmUjuTxM/maxresdefault.jpg",
+      technologies: ["React", "Firebase", "Material-UI","Firebase", "Cloud Functions"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/M76350/delhuan-dairyapp"
     },
     {
       id: 5,
@@ -46,17 +47,38 @@ const Projects = () => {
       description: "A responsive portfolio website with smooth animations, dark mode toggle, and contact form integration.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=500&h=300&fit=crop",
       technologies: ["React", "Framer Motion", "Tailwind CSS", "EmailJS"],
-      liveUrl: "#",
-      githubUrl: "#"
+      liveUrl: "https://manish-code-dinara.vercel.app/",
+      githubUrl: "https://github.com/M76350/manish-code-dinara"
     },
     {
       id: 6,
-      title: "Crypto Trading Bot",
-      description: "An automated cryptocurrency trading bot with real-time market analysis and risk management features.",
-      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop",
-      technologies: ["Python", "TensorFlow", "Binance API", "Docker"],
-      liveUrl: "#",
-      githubUrl: "#"
+      title: " World Atlas & country",
+      description: "  Developed a React app that fetches and displays global flags via API integration. Users can browse country flags, view detailed information including capitals, and interact with a responsive, intuitive interface",
+      image: "https://world-atlas-taupe.vercel.app/image/worldimage.png",
+      technologies: [
+        "React JS",
+        "Core CSS",
+        "Custom CSS",
+        "API Integration",
+        "Hooks Implementation"
+      ],
+      liveUrl: "https://world-atlas-taupe.vercel.app/",
+      githubUrl: "https://github.com/M76350/worldAtlas"
+    },
+    {
+      id: 7,
+      title: " Solar Energy panel",
+      description: "  Created a responsive Delhuan Dairy website with Bootstrap and WOW/AOS animations. Visually engaging, interactive, and mobile-friendly—showcasing dairy products with smooth scroll-triggered effects to enhance user experience.",
+      image: "https://m76350.github.io/solar-energy/img/resources/Mask%20Group%201@2x.png",
+      technologies: [
+        "Html",
+        "Core CSS",
+        "Bootstrap",
+        "Aos animation",
+        " wow Animation"
+      ],
+      liveUrl: "https://m76350.github.io/solar-energy/",
+      githubUrl: "https://github.com/M76350/solar-energy"
     }
   ];
 
@@ -74,7 +96,7 @@ const Projects = () => {
             My <span className="text-gradient">Projects</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of my recent work and personal projects. Each project represents 
+            A showcase of my recent work and personal projects. Each project represents
             a unique challenge and demonstrates different aspects of my development skills.
           </p>
         </motion.div>
@@ -96,7 +118,7 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                
+
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center space-x-4">
                   <Button variant="hero" size="sm" asChild>
