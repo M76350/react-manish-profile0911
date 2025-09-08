@@ -35,8 +35,8 @@ const CustomCursor = () => {
     <div
       className={`custom-cursor ${isHovering ? 'hover' : ''}`}
       style={{
-        left: mousePosition.x - 10,
-        top: mousePosition.y - 10,
+        left: mousePosition.x,
+        top: mousePosition.y,
       }}
     />
   );

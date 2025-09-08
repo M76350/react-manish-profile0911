@@ -6,6 +6,65 @@
 
 @layer base {
   :root {
+    /* Light theme base colors */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    /* Beautiful blue/purple primary theme */
+    --primary: 230 85% 60%;
+    --primary-foreground: 210 40% 98%;
+    --primary-glow: 245 85% 70%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 84% 4.9%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 46.9%;
+
+    --accent: 245 85% 65%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 230 85% 60%;
+
+    --radius: 0.75rem;
+
+    /* Professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(230, 85%, 60%), hsl(245, 85%, 70%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(210, 40%, 96%));
+    --gradient-hero: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(230, 85%, 95%) 50%, hsl(245, 85%, 90%) 100%);
+    
+    /* Professional shadows */
+    --shadow-primary: 0 10px 40px -10px hsl(230, 85%, 60%, 0.3);
+    --shadow-card: 0 8px 32px -8px hsl(214, 31%, 91%, 0.4);
+    --shadow-glow: 0 0 40px hsl(230, 85%, 60%, 0.2);
+
+    /* Animation variables */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /* Sidebar colors for light theme */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 84% 4.9%;
+    --sidebar-primary: 230 85% 60%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 84% 4.9%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 230 85% 60%;
+  }
+
+  .dark {
     /* Dark theme base colors */
     --background: 222 47% 4%;
     --foreground: 210 40% 98%;
@@ -37,21 +96,15 @@
     --input: 222 47% 12%;
     --ring: 230 85% 60%;
 
-    --radius: 0.75rem;
-
-    /* Professional gradients */
+    /* Professional gradients for dark theme */
     --gradient-primary: linear-gradient(135deg, hsl(230, 85%, 60%), hsl(245, 85%, 70%));
     --gradient-secondary: linear-gradient(135deg, hsl(222, 47%, 6%), hsl(222, 47%, 12%));
     --gradient-hero: linear-gradient(135deg, hsl(222, 47%, 4%) 0%, hsl(230, 85%, 8%) 50%, hsl(245, 85%, 12%) 100%);
     
-    /* Professional shadows */
+    /* Professional shadows for dark theme */
     --shadow-primary: 0 10px 40px -10px hsl(230, 85%, 60%, 0.3);
     --shadow-card: 0 8px 32px -8px hsl(222, 47%, 4%, 0.4);
     --shadow-glow: 0 0 40px hsl(230, 85%, 60%, 0.2);
-
-    /* Animation variables */
-    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-spring: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     /* Sidebar colors for dark theme */
     --sidebar-background: 222 47% 6%;
@@ -81,23 +134,24 @@
 }
 
 @layer components {
-  /* Custom cursor */
+  /* Custom cursor - fast and responsive */
   .custom-cursor {
     position: fixed;
-    width: 20px;
-    height: 20px;
-    background: hsl(var(--primary));
+    width: 16px;
+    height: 16px;
+    background: #3b82f6;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
-    mix-blend-mode: difference;
-    transition: all 0.3s ease;
-    box-shadow: var(--shadow-glow);
+    transform: translate(-50%, -50%);
+    transition: all 100ms ease-out;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
   }
 
   .custom-cursor.hover {
-    transform: scale(1.5);
-    background: hsl(var(--accent));
+    transform: translate(-50%, -50%) scale(1.5);
+    background: #8b5cf6;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.7);
   }
 
   /* Professional button variants */
