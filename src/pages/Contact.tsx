@@ -63,7 +63,7 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "manishkumar09112002@gmail.com",
+      value: "manishkumar*****.com" ,
       href: "mailto:manishkumar09112002@gmail.com"
     },
     {
@@ -84,13 +84,13 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/manishkumar",
+      href: "https://github.com/M76350",
       color: "hover:text-gray-400"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/manishkumar",
+      href: "https://www.linkedin.com/in/manish0911",
       color: "hover:text-blue-500"
     },
     {
@@ -115,7 +115,7 @@ const Contact = () => {
             Get In <span className="text-gradient">Touch</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from you. 
+            Have a project in mind or want to collaborate? I'd love to hear from you.
             Let's build something amazing together.
           </p>
         </motion.div>

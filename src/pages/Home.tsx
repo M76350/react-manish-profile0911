@@ -38,11 +38,11 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Background Video */}
-      <video 
-        className="bg-video" 
-        autoPlay 
-        muted 
-        loop 
+      <video
+        className="bg-video"
+        autoPlay
+        muted
+        loop
         playsInline
       >
         <source src="/bg-video.mp4" type="video/mp4" />
@@ -52,7 +52,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-primary/10" />
-        
+
         {/* Floating elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-float" />
@@ -81,7 +81,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h2 className="text-xl md:text-3xl lg:text-4xl text-muted-foreground mb-8">
-                <TypewriterText 
+                <TypewriterText
                   words={['Full-Stack Developer', 'React Specialist', 'UI/UX Designer', 'Problem Solver']}
                   className="text-gradient font-semibold"
                 />
@@ -94,7 +94,7 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl lg:max-w-none leading-relaxed"
             >
-              Passionate about creating exceptional digital experiences with modern technologies. 
+              Passionate about creating exceptional digital experiences with modern technologies.
               Specializing in React, Node.js, and cutting-edge web development.
             </motion.p>
 
@@ -110,10 +110,10 @@ const Home = () => {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              
-              <Button 
-                variant="hero-outline" 
-                size="lg" 
+
+              <Button
+                variant="hero-outline"
+                size="lg"
                 onClick={handleDownloadResume}
                 className="group"
               >
@@ -131,10 +131,10 @@ const Home = () => {
             className="flex justify-center lg:justify-end order-1 lg:order-2"
           >
             <div className="relative">
-              <img 
-                src={heroImage} 
+              <img
+                src={heroImage}
                 alt="Manish Kumar - Full Stack Developer"
-                className="hero-image w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary/20 shadow-2xl"
+                className="hero-image w-64 h-64 md:w-0 md:h-0 lg:w-[500px] lg:h-[500px] rounded-full object-cover border-4 border-primary/20 shadow-2xl"
               />
               <div className="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
             </div>

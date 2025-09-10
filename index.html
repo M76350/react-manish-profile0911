@@ -9,7 +9,10 @@
     content="Manish Kumar - Expert Full-Stack Web Developer specializing in React, Node.js, and modern web technologies. Creating exceptional digital experiences with cutting-edge solutions. Contact: manishkumar09112002@gmail.com" />
   <meta name="keywords" content="Manish Kumar,Manish Code Dinara, Full-Stack DeveloperwithManish, React Developerwith manishkumar_dev, Manish.dev-coder, JavaScript, TypeScript, Node.js, Portfolio, UI/UX Design, Frontend, Backend" />
   <meta name="author" content="Manish Kumar" />
-  
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://manishkumar-portfolio.com/" />
+
   <!-- Structured Data for SEO -->
   <script type="application/ld+json">
   {
@@ -31,7 +34,24 @@
     "nationality": "Indian"
   }
   </script>
+
+  <!-- Extra Schema for Website -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Manish Kumar Portfolio",
+    "url":"https://manishkumar-portfolio.com",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://manishkumar-portfolio.com/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
   <link rel="icon" href="/src/assets/mk-logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/src/assets/mk-logo.png" />
 
   <meta property="og:title" content="Manish Kumar | Full-Stack Web Developer & React Specialist" />
   <meta property="og:description"
