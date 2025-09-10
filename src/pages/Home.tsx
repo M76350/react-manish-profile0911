@@ -36,7 +36,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden  ">
       {/* Background Video */}
       <video
         className="bg-video"
@@ -128,7 +128,7 @@ const Home = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="flex justify-center lg:justify-end order-1 lg:order-2"
+            className="flex justify-center lg:justify-end order-1 lg:order-2  mt-[100px]"
           >
             <div className="relative">
               <img
