@@ -2,10 +2,12 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Code, Palette, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import TypewriterText from '@/components/TypewriterText';
 import Projects from './Projects';
 import Contact from './Contact';
 import Experience from './Experience';
 import About from './About';
+import heroImage from '@/assets/hero-image.jpg';
 
 const Home = () => {
   const handleDownloadResume = () => {
@@ -35,6 +37,17 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Background Video */}
+      <video 
+        className="bg-video" 
+        autoPlay 
+        muted 
+        loop 
+        playsInline
+      >
+        <source src="/bg-video.mp4" type="video/mp4" />
+      </video>
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background gradient */}
@@ -46,62 +59,85 @@ const Home = () => {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
         </div>
 
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-6xl md:text-8xl font-bold mb-6">
-              Hi, I'm{' '}
-              <span className="text-gradient">
-                Manish Kumar
-              </span>
-            </h1>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <h2 className="text-2xl md:text-4xl text-muted-foreground mb-8">
-              Full-Stack Web Developer
-            </h2>
-          </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed"
-          >
-            Passionate about creating exceptional digital experiences with modern technologies. 
-            Specializing in React, Node.js, and cutting-edge web development.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
-          >
-            <Link to="/projects">
-              <Button variant="hero" size="lg" className="group">
-                View My Work
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
-            
-            <Button 
-              variant="hero-outline" 
-              size="lg" 
-              onClick={handleDownloadResume}
-              className="group"
+        <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center px-4 max-w-7xl mx-auto w-full">
+          {/* Text Content */}
+          <div className="text-center lg:text-left order-2 lg:order-1">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
             >
-              <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-              Download Resume
-            </Button>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+                Hi, I'm{' '}
+                <span className="text-gradient">
+                  Manish Kumar
+                </span>
+              </h1>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <h2 className="text-xl md:text-3xl lg:text-4xl text-muted-foreground mb-8">
+                <TypewriterText 
+                  words={['Full-Stack Developer', 'React Specialist', 'UI/UX Designer', 'Problem Solver']}
+                  className="text-gradient font-semibold"
+                />
+              </h2>
+            </motion.div>
+
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl lg:max-w-none leading-relaxed"
+            >
+              Passionate about creating exceptional digital experiences with modern technologies. 
+              Specializing in React, Node.js, and cutting-edge web development.
+            </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center"
+            >
+              <Link to="/projects">
+                <Button variant="hero" size="lg" className="group">
+                  View My Work
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
+              
+              <Button 
+                variant="hero-outline" 
+                size="lg" 
+                onClick={handleDownloadResume}
+                className="group"
+              >
+                <Download className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
+                Download Resume
+              </Button>
+            </motion.div>
+          </div>
+
+          {/* Hero Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="flex justify-center lg:justify-end order-1 lg:order-2"
+          >
+            <div className="relative">
+              <img 
+                src={heroImage} 
+                alt="Manish Kumar - Full Stack Developer"
+                className="hero-image w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-primary/20 shadow-2xl"
+              />
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary to-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
+            </div>
           </motion.div>
         </div>
       </section>

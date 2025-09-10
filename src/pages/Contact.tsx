@@ -37,7 +37,7 @@ const Contact = () => {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: 'manish@example.com' // Replace with your email
+          to_email: 'manishkumar09112002@gmail.com'
         },
         'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
       );
@@ -63,19 +63,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "manish@example.com",
-      href: "mailto:manish@example.com"
+      value: "manishkumar09112002@gmail.com",
+      href: "mailto:manishkumar09112002@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+91 7635065908",
+      href: "tel:+917635065908"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "India",
       href: "#"
     }
   ];

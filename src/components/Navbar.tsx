@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import mkLogo from '@/assets/mk-logo.png';
 
 const Navbar = () => {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -52,13 +53,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">
-                <img src="public/favlogo.png" alt="" />
-              </span>
-            </div>
-            <span className="font-bold text-xl">Manish Kumar</span>
+          <Link to="/" className="flex items-center space-x-3 hover:scale-105 transition-transform group">
+            <img 
+              src={mkLogo} 
+              alt="MK Logo" 
+              className="w-10 h-10 rounded-lg group-hover:rotate-12 transition-transform duration-300"
+            />
+            <span className="font-bold text-xl text-gradient">Manish Kumar</span>
           </Link>
 
           {/* Desktop Navigation */}
