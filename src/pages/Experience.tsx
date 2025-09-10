@@ -20,7 +20,7 @@ const Experience = () => {
     {
       id: 2,
       title: "Full-Stack Developer",
-      company: "Digital Innovations Inc",
+      company: "freeLancer",
       location: "Remote",
       duration: "Aug 2025 - Present",
       description: [
@@ -29,7 +29,7 @@ const Experience = () => {
         "Optimized application performance resulting in 40% faster load times",
         "Integrated third-party APIs and payment processing systems"
       ],
-      technologies: ["React", "Express.js", "MongoDB", "Stripe", "Figma","Socket.Io","Streaming","ReduxToolKit","Node js","React Native","flutter","dart","Getx","Riverpord"]
+      technologies: ["React", "Express.js", "MongoDB", "Stripe", "Figma", "Socket.Io", "Streaming", "ReduxToolKit", "Node js", "React Native", "flutter", "dart", "Getx", "Riverpord"]
     },
     {
       id: 3,
@@ -43,7 +43,7 @@ const Experience = () => {
         "Worked closely with UX designers to enhance user experience",
         "Participated in agile development cycles and sprint planning"
       ],
-      technologies: ["React", "Next js","redux","Shad CN","Api Integratation","git & github","Vue.js", "SASS", "Webpack", "Gsap","Tailwind Css",]
+      technologies: ["React", "Next js", "redux", "Shad CN", "Api Integratation", "git & github", "Vue.js", "SASS", "Webpack", "Gsap", "Tailwind Css",]
     },
     {
       id: 4,
@@ -57,7 +57,7 @@ const Experience = () => {
         "Assisted in SEO optimization and performance improvements",
         "Provided technical support and maintenance for client websites"
       ],
-      technologies: [ "HTML", "CSS", "Bootstrap", "JavaScript","Wordpress"]
+      technologies: ["HTML", "CSS", "Bootstrap", "JavaScript", "Wordpress"]
     }
   ];
 
@@ -75,7 +75,7 @@ const Experience = () => {
             Work <span className="text-gradient">Experience</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            My professional journey in web development, from junior developer to senior roles, 
+            My professional journey in web development, from junior developer to senior roles,
             building innovative solutions for diverse clients and companies.
           </p>
         </motion.div>
@@ -96,7 +96,7 @@ const Experience = () => {
                 className="relative flex items-start space-x-8"
               >
                 {/* Timeline dot */}
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center relative z-10">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-r hidden md:flex from-primary to-accent rounded-full  items-center justify-center relative z-10">
                   <Calendar className="h-8 w-8 text-white" />
                 </div>
 
@@ -105,7 +105,7 @@ const Experience = () => {
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                     <div>
                       <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>
-                      <div className="flex items-center space-x-4 text-muted-foreground">
+                      <div className="flex flex-wrap items-center space-x-4 text-muted-foreground">
                         <span className="font-semibold text-primary">{exp.company}</span>
                         <div className="flex items-center space-x-1">
                           <MapPin className="h-4 w-4" />
