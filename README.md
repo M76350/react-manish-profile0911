@@ -5,7 +5,7 @@ A personal portfolio built with modern web technologies, showcasing projects and
 ## Live Preview
 
 Explore the live site here:  
-[https://manish-code-dinara.vercel.app/](https://manish-code-dinara.vercel.app/)
+https://manish-code-dinara.vercel.app/
 
 ## Tech Stack
 
