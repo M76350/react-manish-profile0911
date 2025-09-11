@@ -54,21 +54,33 @@ const About = () => {
           >
             <h2 className="text-3xl font-bold mb-6">My Story</h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Hello! I'm Manish Kumar, a passionate full-stack developer with over 5 years of experience 
-                creating digital solutions that make a difference. My journey began with a simple curiosity 
-                about how websites work, which quickly evolved into a deep passion for programming and technology.
-              </p>
-              <p>
-                I specialize in modern web technologies, particularly React and Node.js, and I'm constantly 
-                learning new tools and frameworks to stay at the forefront of web development. I believe in 
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              >
+                Hello! I'm Manish Kumar, a passionate full-stack developer with 1.5 years of experience 
+                creating innovative digital solutions that make a difference. My journey began with a simple curiosity 
+                about how websites work, which quickly evolved into a deep passion for programming and modern technology.
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+              >
+                I specialize in modern web technologies, particularly React, TypeScript, and Node.js, and I'm constantly 
+                learning cutting-edge tools and frameworks to stay at the forefront of web development. I believe in 
                 writing clean, maintainable code and creating user experiences that are both beautiful and functional.
-              </p>
-              <p>
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                projects, or enjoying a good cup of coffee while planning my next project. I'm always excited 
-                to take on new challenges and collaborate with like-minded professionals.
-              </p>
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+              >
+                When I'm not coding, you can find me exploring innovative technologies, contributing to open-source 
+                projects, or enjoying a good cup of coffee while planning my next creative project. I'm always excited 
+                to take on challenging problems and collaborate with forward-thinking professionals.
+              </motion.p>
             </div>
           </motion.div>
 
@@ -95,14 +107,24 @@ const About = () => {
 
             {/* Quick stats */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="card-gradient p-6 rounded-xl text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                className="card-gradient p-6 rounded-xl text-center"
+              >
+                <div className="text-3xl font-bold text-primary mb-2">25+</div>
                 <div className="text-sm text-muted-foreground">Projects Completed</div>
-              </div>
-              <div className="card-gradient p-6 rounded-xl text-center">
-                <div className="text-3xl font-bold text-primary mb-2">5+</div>
+              </motion.div>
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                className="card-gradient p-6 rounded-xl text-center"
+              >
+                <div className="text-3xl font-bold text-primary mb-2">1.5+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
-              </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>
