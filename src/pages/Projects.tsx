@@ -79,6 +79,36 @@ const Projects = () => {
       ],
       liveUrl: "https://m76350.github.io/solar-energy/",
       githubUrl: "https://github.com/M76350/solar-energy"
+    },
+    {
+      id: 8,
+      title: " Netlify web modal",
+      description: "   Created a responsive Delhuan Dairy website with Bootstrap and WOW/AOS animations. Visually engaging, interactive, and mobile-friendly—showcasing dairy products with smooth scroll-triggered effects to enhance user experience.",
+      image: "https://m76350.github.io/solar-energy/img/resources/Mask%20Group%201@2x.png",
+      technologies: [
+        "Html",
+        "Core CSS",
+        "Bootstrap",
+        "Aos animation",
+        " wow Animation"
+      ],
+      liveUrl: "https://m76350.github.io/web-net-fl-web/",
+      githubUrl: "https://github.com/M76350/web-net-fl-web"
+    },
+    {
+      id: 8,
+      title: " Doctor appoinmentvisit",
+      description: "  I created a Doctor Appointment Visit Website using HTML, CSS, and JavaScript, designed to help patients easily schedule medical consultations online. The website features a user-friendly interface, responsive design, and interactive booking forms that ensure a smooth appointment process across devices.",
+      image: "https://m76350.github.io/solar-energy/img/resources/Mask%20Group%201@2x.png",
+      technologies: [
+        "Html",
+        "Core CSS",
+        "Bootstrap",
+        "Aos animation"
+        
+      ],
+      liveUrl: "https://m76350.github.io/doctorwebsite/",
+      githubUrl: "https://github.com/M76350/doctorwebsite"
     }
   ];
 

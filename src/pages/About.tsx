@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { Code2, Palette, Zap, Users, Coffee, Heart } from 'lucide-react';
+import heroImage from '@/assets/hero-image.jpg';
+
 
 const About = () => {
   const skills = [
@@ -79,9 +81,14 @@ const About = () => {
           >
             {/* Profile placeholder */}
             <div className="card-gradient p-8 rounded-2xl text-center">
-              <div className="w-48 h-48 mx-auto bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mb-6">
+              {/* <div className="w-48 h-48 mx-auto bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mb-6">
                 <span className="text-6xl font-bold text-white">MK</span>
-              </div>
+              </div> */}
+               <img
+                src={heroImage}
+                alt="Manish Kumar - Full Stack Developer"
+                className=" mx-auto hero-image w-64 h-64 md:w-0 md:h-0 lg:w-[300px] lg:h-[300px] rounded-full object-cover border-4 border-primary/20 shadow-2xl"
+              />
               <h3 className="text-2xl font-bold mb-2">Manish Kumar</h3>
               <p className="text-muted-foreground">Full-Stack Developer</p>
             </div>

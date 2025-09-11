@@ -70,7 +70,8 @@ const Home = () => {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
                 Hi, I'm{' '}
                 <span className="text-gradient">
-                  Manish Kumar
+                    <TypewriterText 
+                  words={['Manish']}  />  Kumar
                 </span>
               </h1>
             </motion.div>
