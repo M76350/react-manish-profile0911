@@ -28,7 +28,7 @@ const Projects = () => {
       title: "Delhuan dairy & Animal care",
       description: "Developed a responsive Delhuan Dairy website using HTML, CSS, and Bootstrap, enhanced with WOW.js animations. The site offers smooth navigation, vibrant dairy visuals, and engaging animation effects that enhance user interaction",
       image: "https://delhuan-dairy.netlify.app/assets/hero-dairy-3-DXCLnQ35.jpg",
-      technologies: ["Flutter","dart","material","getx", "riverpord"],
+      technologies: ["Flutter", "dart", "material", "getx", "riverpord"],
       liveUrl: "https://delhuan-dairy.netlify.app/",
       githubUrl: "https://github.com/M76350/delhuan-dairy"
     },
@@ -37,7 +37,7 @@ const Projects = () => {
       title: "Delhuan dairy App",
       description: "Built the Delhuan Dairy app with Flutter (Dart), featuring a responsive UI, seamless dairy product browsing, intuitive ordering, and engaging animations—offering users a smooth and modern mobile experience.",
       image: "https://i.ytimg.com/vi/KVqtmUjuTxM/maxresdefault.jpg",
-      technologies: ["React", "Firebase", "Material-UI","Firebase", "Cloud Functions"],
+      technologies: ["React", "Firebase", "Material-UI", "Firebase", "Cloud Functions"],
       liveUrl: "#",
       githubUrl: "https://github.com/M76350/delhuan-dairyapp"
     },
@@ -84,7 +84,7 @@ const Projects = () => {
       id: 8,
       title: " Netlify web modal",
       description: "   Created a responsive Delhuan Dairy website with Bootstrap and WOW/AOS animations. Visually engaging, interactive, and mobile-friendly—showcasing dairy products with smooth scroll-triggered effects to enhance user experience.",
-      image: "https://m76350.github.io/solar-energy/img/resources/Mask%20Group%201@2x.png",
+      image: "https://m76350.github.io/web-net-fl-web/src/netflic-hero-bg.png",
       technologies: [
         "Html",
         "Core CSS",
@@ -99,16 +99,31 @@ const Projects = () => {
       id: 8,
       title: " Doctor appoinmentvisit",
       description: "  I created a Doctor Appointment Visit Website using HTML, CSS, and JavaScript, designed to help patients easily schedule medical consultations online. The website features a user-friendly interface, responsive design, and interactive booking forms that ensure a smooth appointment process across devices.",
-      image: "https://m76350.github.io/solar-energy/img/resources/Mask%20Group%201@2x.png",
+      image: "https://m76350.github.io/doctorwebsite/image/doc-header-img.png",
       technologies: [
         "Html",
         "Core CSS",
         "Bootstrap",
         "Aos animation"
-        
+
       ],
       liveUrl: "https://m76350.github.io/doctorwebsite/",
       githubUrl: "https://github.com/M76350/doctorwebsite"
+    }
+    , {
+      id: 9,
+      title: " Doctor appoinmentvisit",
+      description: "  I created a Doctor Appointment Visit Website using Svelte, CSS, and JavaScript, designed to help patients easily schedule medical consultations online. The website features a user-friendly interface, responsive design, and interactive booking forms that ensure a smooth appointment process across devices.",
+      image: "https://assets.awwwards.com/awards/images/2025/02/Monolith-Thumb.jpg",
+      technologies: [
+        "jsx",
+        "Core CSS",
+        "Svelte",
+        "Fade animation"
+
+      ],
+      liveUrl: "https://awwardweb.vercel.app/",
+      githubUrl: "https://github.com/M76350/Awwardweb"
     }
   ];
 
