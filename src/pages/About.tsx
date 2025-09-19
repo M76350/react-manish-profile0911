@@ -5,15 +5,22 @@ import heroImage from '@/assets/hero-image.jpg';
 
 const About = () => {
   const skills = [
+    { name: "Html", level: 95, category: "Frontend" },
+    { name: "Css", level: 90, category: "Frontend" },
+    { name: "bootstrap", level: 90, category: "Frontend" },
+    { name: "Tailwindcss", level: 90, category: "Frontend" },
     { name: "JavaScript", level: 95, category: "Frontend" },
-    { name: "React", level: 90, category: "Frontend" },
+    { name: "React", level: 80, category: "Frontend" },
+    { name: "Next Js", level: 75, category: "Frontend" },
+    { name: "Svelte", level: 80, category: "Frontend" },
     { name: "TypeScript", level: 85, category: "Frontend" },
     { name: "Node.js", level: 88, category: "Backend" },
-    { name: "Python", level: 80, category: "Backend" },
+    { name: "Express Js", level: 80, category: "Backend" },
     { name: "PostgreSQL", level: 82, category: "Database" },
     { name: "MongoDB", level: 85, category: "Database" },
     { name: "AWS", level: 75, category: "Cloud" },
     { name: "Docker", level: 78, category: "DevOps" },
+    { name: "FireBase", level: 75, category: "Frontend" },
     { name: "Git", level: 92, category: "Tools" }
   ];
 
